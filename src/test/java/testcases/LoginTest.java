@@ -2,6 +2,7 @@ package testcases;
 
 
 import base.BaseTest;
+import org.testng.Assert;
 import pages.LoginPage;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,6 +22,8 @@ public class LoginTest extends BaseTest {
         loginPage.fill_Username_Field();
         loginPage.fill_Password_FIeld();
         loginPage.click_Login();
+        Assert.assertTrue(loginPage.assert_Text(), "Login was not successful");
+
     }
 }
 

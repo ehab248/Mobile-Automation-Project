@@ -7,5 +7,5 @@ public class LoginLocators {
     public static final By Username_Field = MobileBy.accessibilityId("test-Username");
     public static final By Password_Field = MobileBy.accessibilityId("test-Password");
     public static final By Login_Button = MobileBy.accessibilityId("test-LOGIN");
-
+    public static final By AssertText = MobileBy.androidUIAutomator("new UiSelector().text(\"PRODUCTS\")");
 }

@@ -2,6 +2,7 @@ package pages;
 
 
 import base.BasePage;
+import locators.HomePageLocators;
 import locators.LoginLocators;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
@@ -32,5 +33,10 @@ public class LoginPage extends BasePage {
     public void click_Login() {
         WebElement loginButton = driver.findElement(LoginLocators.Login_Button);
         loginButton.click();
+    }
+    public Boolean assert_Text() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+       return driver.findElement(LoginLocators.AssertText).isDisplayed();
+
     }
 }

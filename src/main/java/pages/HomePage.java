@@ -26,8 +26,8 @@ public class HomePage extends BasePage {
     }
 
     public void scroll_Down() {
-     driver.findElement(HomePageLocators.Scroll);
-}
+        driver.findElement(HomePageLocators.Scroll);
+    }
 
     public void click_AddToCart2() {
         WebElement addToCart2 = driver.findElement(HomePageLocators.Add_To_Cart2);
@@ -36,6 +36,11 @@ public class HomePage extends BasePage {
     public void click_YourCart() {
       WebElement yourCart = driver.findElement(HomePageLocators.Your_Cart);
       yourCart.click();
+    }
+    public Boolean assert_Text() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        return driver.findElement(LoginLocators.AssertText).isDisplayed();
+
     }
 }
 
