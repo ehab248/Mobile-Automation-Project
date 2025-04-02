@@ -15,7 +15,7 @@ public class HomePageLocators {
 
     public static final By Add_To_Cart2 = MobileBy.androidUIAutomator("new UiSelector().text(\"ADD TO CART\")");
     public static final By Your_Cart = MobileBy.androidUIAutomator("new UiSelector().className(\"android.widget.ImageView\").instance(3)");
-    public static final By AssertText = MobileBy.androidUIAutomator("new UiSelector().text(\"YOUR CART\")");
+    public static final By AssertText2 = MobileBy.androidUIAutomator("new UiSelector().text(\"YOUR CART\")");
 
 
 }

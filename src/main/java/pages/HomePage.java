@@ -6,6 +6,7 @@ import locators.HomePageLocators;
 import locators.LoginLocators;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -37,9 +38,10 @@ public class HomePage extends BasePage {
       WebElement yourCart = driver.findElement(HomePageLocators.Your_Cart);
       yourCart.click();
     }
-    public Boolean assert_Text() {
+    public Boolean assert_Text2() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return driver.findElement(LoginLocators.AssertText).isDisplayed();
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(HomePageLocators.AssertText2));
+      return element.isDisplayed();
 
     }
 }

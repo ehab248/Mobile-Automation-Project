@@ -21,7 +21,7 @@ public class HomePageTest {
         homePage.scroll_Down();
         homePage.click_AddToCart2();
         homePage.click_YourCart();
-        Assert.assertTrue(homePage.assert_Text(), "Login was not successful");
+        Assert.assertTrue(homePage.assert_Text2(), "HomePage Transfer was not successful");
 
     }
 }

@@ -11,7 +11,7 @@ public class YourCartLocators {
     );
 
     public static final By Checkout = MobileBy.accessibilityId("test-CHECKOUT");
-    public static final By AssertText = MobileBy.androidUIAutomator("new UiSelector().text(\"CHECKOUT: INFORMATION\")");
+    public static final By AssertText3 = MobileBy.androidUIAutomator("new UiSelector().text(\"CHECKOUT: INFORMATION\")");
 
 
 }

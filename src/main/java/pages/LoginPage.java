@@ -6,6 +6,7 @@ import locators.HomePageLocators;
 import locators.LoginLocators;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -34,9 +35,10 @@ public class LoginPage extends BasePage {
         WebElement loginButton = driver.findElement(LoginLocators.Login_Button);
         loginButton.click();
     }
-    public Boolean assert_Text() {
+    public Boolean assert_Text1() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-       return driver.findElement(LoginLocators.AssertText).isDisplayed();
-
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.AssertText1));
+        return element.isDisplayed();
     }
+
 }

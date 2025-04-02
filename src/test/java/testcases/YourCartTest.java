@@ -18,7 +18,7 @@ public class YourCartTest {
     public void testAddElementToCard() {
         yourCartPage.scroll_Down2();
         yourCartPage.click_Checkout();
-        Assert.assertTrue(yourCartPage.assert_Text(), "Login was not successful");
+        Assert.assertTrue(yourCartPage.assert_Text3(), "YourCart Transfer was not successful");
 
 
     }

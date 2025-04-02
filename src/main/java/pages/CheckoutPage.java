@@ -3,9 +3,11 @@ package pages;
 import base.BasePage;
 import io.appium.java_client.android.AndroidDriver;
 import locators.CheckoutLocators;
+import locators.HomePageLocators;
 import locators.LoginLocators;
 import locators.YourCartLocators;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -44,9 +46,10 @@ public class CheckoutPage extends BasePage {
         WebElement finish = driver.findElement(CheckoutLocators.Finish);
         finish.click();
     }
-    public Boolean assert_Text() {
+    public Boolean assert_Text4() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return driver.findElement(LoginLocators.AssertText).isDisplayed();
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(CheckoutLocators.AssertText4));
+        return element.isDisplayed();
 
     }
 }

@@ -24,7 +24,7 @@ public class CheckoutTest  {
         checkoutPage.click_Continue();
         checkoutPage.scroll_Down3();
         checkoutPage.click_Finish();
-        Assert.assertTrue(checkoutPage.assert_Text(), "Login was not successful");
+        Assert.assertTrue(checkoutPage.assert_Text4(), "Checkout Transfer was not successful");
 
     }
 }

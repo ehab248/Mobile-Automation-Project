@@ -6,6 +6,7 @@ import locators.HomePageLocators;
 import locators.LoginLocators;
 import locators.YourCartLocators;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -24,9 +25,9 @@ public class YourCartPage extends BasePage {
         WebElement checkout = driver.findElement(YourCartLocators.Checkout);
         checkout.click();
     }
-    public Boolean assert_Text() {
+    public Boolean assert_Text3() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return driver.findElement(LoginLocators.AssertText).isDisplayed();
-
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(YourCartLocators.AssertText3));
+        return element.isDisplayed();
     }
 }

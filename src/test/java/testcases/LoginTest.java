@@ -17,12 +17,12 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void testLoginWithValidCredentials() {
+    public void testLoginWithValidCredentials() throws InterruptedException {
 
         loginPage.fill_Username_Field();
         loginPage.fill_Password_FIeld();
         loginPage.click_Login();
-        Assert.assertTrue(loginPage.assert_Text(), "Login was not successful");
+        Assert.assertTrue(loginPage.assert_Text1(), "Login was not successful");
 
     }
 }
