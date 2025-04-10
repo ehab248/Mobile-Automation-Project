@@ -10,6 +10,5 @@ public class BasePage {
 
     public BasePage(AndroidDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 }
