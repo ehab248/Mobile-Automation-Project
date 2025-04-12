@@ -21,7 +21,7 @@ public class HomePage extends BasePage {
 
     public void click_AddToCart1() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement addToCart1 = driver.findElement(HomePageLocators.Add_To_Cart1);
+        WebElement addToCart1 = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.Add_To_Cart1));
         addToCart1.click();
     }
 
@@ -30,13 +30,16 @@ public class HomePage extends BasePage {
     }
 
     public void click_AddToCart2() {
-        WebElement addToCart2 = driver.findElement(HomePageLocators.Add_To_Cart2);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement addToCart2 = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.Add_To_Cart2));
         addToCart2.click();
     }
     public void click_YourCart() {
-      WebElement yourCart = driver.findElement(HomePageLocators.Your_Cart);
-      yourCart.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement yourCart = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.Your_Cart));
+        yourCart.click();
     }
+
     public Boolean assert_Text2() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(HomePageLocators.AssertText2));

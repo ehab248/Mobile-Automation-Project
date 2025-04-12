@@ -13,6 +13,11 @@ public class CheckoutLocators {
             "new UiScrollable(new UiSelector().scrollable(true))" +
                     ".scrollIntoView(new UiSelector().text(\"FINISH\"))"
     );
+    public static final By Price1 = MobileBy.androidUIAutomator("new UiSelector().text(\"$29.99\")");
+    public static final By Price2 = MobileBy.androidUIAutomator("new UiSelector().text(\"$7.99\")");
+    public static final By Total_Price = MobileBy.androidUIAutomator("new UiSelector().text(\"Item total: $37.98\")");
+    public static final By Tax = MobileBy.androidUIAutomator("new UiSelector().text(\"Tax: $3.04\")");
+
 
     public static final By Finish = MobileBy.accessibilityId("test-FINISH");
     public static final By AssertText4 = MobileBy.androidUIAutomator("new UiSelector().text(\"CHECKOUT: COMPLETE!\")");

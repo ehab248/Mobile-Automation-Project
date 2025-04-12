@@ -21,11 +21,11 @@ public class HomePageTest {
 
         homePage.clickSort();
         homePage.click_High2Low();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+      //  try {
+       //     Thread.sleep(5000);
+        //} catch (InterruptedException e) {
+          //  throw new RuntimeException(e);
+     //   }
         boolean resualt1 =homePage.comparePrices();
         Assert.assertTrue(resualt1,"The first price is not greater than or equal to the second price");
         homePage.clickSort();

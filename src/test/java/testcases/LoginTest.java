@@ -18,9 +18,9 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testLoginWithValidCredentials() throws InterruptedException {
-Thread.sleep(3000);
+          Thread.sleep(2000);
         loginPage.fill_Username_Field();
-        loginPage.fill_Password_FIeld();
+        loginPage.fill_Password_Field();
         loginPage.click_Login();
         Assert.assertTrue(loginPage.assert_Text1(), "Login was not successful");
 

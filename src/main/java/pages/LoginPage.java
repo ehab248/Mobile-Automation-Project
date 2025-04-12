@@ -26,7 +26,7 @@ public class LoginPage extends BasePage {
         usernameField.sendKeys("standard_user");
     }
 
-    public void fill_Password_FIeld() {
+    public void fill_Password_Field() {
         WebElement passwordField = driver.findElement(LoginLocators.Password_Field);
         passwordField.sendKeys("secret_sauce");
     }

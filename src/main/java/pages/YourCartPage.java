@@ -22,7 +22,8 @@ public class YourCartPage extends BasePage {
         driver.findElement(YourCartLocators.Scroll2);
     }
     public void click_Checkout() {
-        WebElement checkout = driver.findElement(YourCartLocators.Checkout);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        WebElement checkout = wait.until(ExpectedConditions.elementToBeClickable(YourCartLocators.Checkout));
         checkout.click();
     }
     public Boolean assert_Text3() {
