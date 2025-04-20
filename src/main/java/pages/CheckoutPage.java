@@ -103,4 +103,9 @@ public class CheckoutPage extends BasePage {
 
         return Double.parseDouble(Tax_value);
     }
+
+    public void clickBackHome() {
+        WebElement backHomeButton = wait.until(ExpectedConditions.elementToBeClickable(CheckoutLocators.backHome));
+        backHomeButton.click();
+    }
 }
