@@ -98,8 +98,45 @@ public class HomePage extends BasePage {
         return firstText.compareToIgnoreCase(secondText) >= 0;
     }
 
+    public void clickDisplayProducts() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement display = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.displayProducts));
+        display.click();
+    }
 
+    public void click_AddToCart3() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement addToCart3 = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.Add_To_Cart3));
+        addToCart3.click();
+    }
 
+    public void Photo_4() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement photoOf4 = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.Photo_4));
+        photoOf4.click();
+    }
+    public void click_AddToCart4() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement addToCart4 = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.Add_To_Cart4));
+        addToCart4.click();
+    }
+    public void removeFromCart4() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement remove_4 = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.Remove_4));
+        remove_4.click();      
+    }
+
+    public void backToProds() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement backToProducts = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.backToProducts));
+        backToProducts.click();
+    }
+
+    public void click_AddToCart5() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement addToCart5 = wait.until(ExpectedConditions.elementToBeClickable(HomePageLocators.Add_To_Cart5));
+        addToCart5.click();
+    }
 
 }
 
