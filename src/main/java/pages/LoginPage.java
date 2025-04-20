@@ -2,7 +2,6 @@ package pages;
 
 
 import base.BasePage;
-import locators.HomePageLocators;
 import locators.LoginLocators;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
@@ -21,7 +20,6 @@ public class LoginPage extends BasePage {
     }
 
     public void fill_Username_Field() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement usernameField = driver.findElement(LoginLocators.Username_Field);
         usernameField.sendKeys("standard_user");
     }
