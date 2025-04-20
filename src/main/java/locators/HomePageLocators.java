@@ -26,5 +26,14 @@ public class HomePageLocators {
     public static final By SecondElementTitle = AppiumBy.xpath("((//android.view.ViewGroup[@content-desc=\"test-Item\"])[2]//android.widget.TextView[@content-desc=\"test-Item title\"])");
     public static final By FirstElementPrice = AppiumBy.xpath("((//android.view.ViewGroup[@content-desc=\"test-Item\"])[1]//android.widget.TextView[@content-desc=\"test-Price\"])");
     public static final By SecondElementPrice = AppiumBy.xpath("((//android.view.ViewGroup[@content-desc=\"test-Item\"])[2]//android.widget.TextView[@content-desc=\"test-Price\"])");
+    
+    public static final By displayProducts = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Toggle\"]/android.widget.ImageView");
 
+    public static final By Add_To_Cart3 = MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[2]");
+    public static final By Photo_4 = MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"test-Item\"])[3]/android.widget.ImageView");        
+    public static final By Add_To_Cart4 = MobileBy.accessibilityId("test-ADD TO CART");        
+    public static final By Remove_4 = MobileBy.accessibilityId("test-REMOVE");        
+    public static final By backToProducts = MobileBy.androidUIAutomator("new UiSelector().description(\"test-BACK TO PRODUCTS\")");        
+    public static final By Add_To_Cart5 = MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[4]");        
+    
 }
