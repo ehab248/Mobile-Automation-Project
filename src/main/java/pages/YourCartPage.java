@@ -2,8 +2,6 @@ package pages;
 
 import base.BasePage;
 import io.appium.java_client.android.AndroidDriver;
-import locators.HomePageLocators;
-import locators.LoginLocators;
 import locators.YourCartLocators;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
