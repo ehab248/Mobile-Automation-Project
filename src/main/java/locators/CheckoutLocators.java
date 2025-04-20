@@ -21,5 +21,6 @@ public class CheckoutLocators {
 
     public static final By Finish = MobileBy.accessibilityId("test-FINISH");
     public static final By AssertText4 = MobileBy.androidUIAutomator("new UiSelector().text(\"CHECKOUT: COMPLETE!\")");
+    public static final By backHome = MobileBy.accessibilityId("test-BACK HOME");
 
 }
