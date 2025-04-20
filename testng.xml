@@ -7,6 +7,7 @@
             <class name="testcases.HomePageTest"/>
             <class name="testcases.YourCartTest"/>
             <class name="testcases.CheckoutTest"/>
+            <class name="testcases.Reorder"/>
         </classes>
     </test>
 </suite>
