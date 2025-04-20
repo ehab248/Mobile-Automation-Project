@@ -22,10 +22,8 @@ public class CheckoutTest  {
         checkoutPage.fill_LastName();
         checkoutPage.fill_Zip();
         checkoutPage.click_Continue();
-
-
-
     }
+    
     @Test(dependsOnMethods = "testFillCheckoutForm")
     public void test_TotalPriceCalculation() {
         double price1 = checkoutPage.assert_Price1();
@@ -37,7 +35,7 @@ public class CheckoutTest  {
         Assert.assertEquals(total*0.080043, tax, 0.01, "Tax is not 8% ");
         checkoutPage.click_Finish();
         Assert.assertTrue(checkoutPage.assert_Text4(), "Checkout Transfer was not successful");
-
+        checkoutPage.clickBackHome();
     }
 
 }
