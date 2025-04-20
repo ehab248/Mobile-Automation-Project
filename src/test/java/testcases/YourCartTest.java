@@ -4,7 +4,6 @@ import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.HomePage;
 import pages.YourCartPage;
 
 public class YourCartTest {
@@ -19,8 +18,6 @@ public class YourCartTest {
         yourCartPage.scroll_Down2();
         yourCartPage.click_Checkout();
         Assert.assertTrue(yourCartPage.assert_Text3(), "YourCart Transfer was not successful");
-
-
     }
 }
 
