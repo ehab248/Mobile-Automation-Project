@@ -5,6 +5,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 
 import java.net.MalformedURLException;
@@ -14,7 +15,7 @@ public class BaseTest {
    public static AndroidDriver driver;
 
 
-    @BeforeClass
+    @BeforeSuite
     public void setup() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("disableSuppressAccessibilityService", true);
