@@ -14,6 +14,7 @@ public class LoginPage extends BasePage {
 
     private AndroidDriver driver;
 
+
     public LoginPage(AndroidDriver driver) {
        super(driver);
         this.driver = driver;
@@ -21,12 +22,12 @@ public class LoginPage extends BasePage {
 
     public void fill_Username_Field() {
         WebElement usernameField = driver.findElement(LoginLocators.Username_Field);
-        usernameField.sendKeys("standard_user");
+        usernameField.sendKeys(testData.getJsonData("username"));
     }
 
     public void fill_Password_Field() {
         WebElement passwordField = driver.findElement(LoginLocators.Password_Field);
-        passwordField.sendKeys("secret_sauce");
+        passwordField.sendKeys(testData.getJsonData("password"));
     }
 
     public void click_Login() {
