@@ -28,17 +28,17 @@ public class CheckoutPage extends BasePage {
 
     public void fill_FirstName() {
         WebElement firstnameField = wait.until(ExpectedConditions.visibilityOfElementLocated(CheckoutLocators.Firstname_Field));
-        firstnameField.sendKeys("Ehab");
+        firstnameField.sendKeys(testData.getJsonData("firstname"));
     }
 
     public void fill_LastName() {
         WebElement lastnameField = wait.until(ExpectedConditions.visibilityOfElementLocated(CheckoutLocators.Lastname_Field));
-        lastnameField.sendKeys("Hussein");
+        lastnameField.sendKeys(testData.getJsonData("lastname"));
     }
 
     public void fill_Zip() {
         WebElement zipField = wait.until(ExpectedConditions.visibilityOfElementLocated(CheckoutLocators.Zip_Field));
-        zipField.sendKeys("2455");
+        zipField.sendKeys(testData.getJsonData("postalcode"));
     }
 
     public void click_Continue() {

@@ -19,7 +19,7 @@ public class JsonData {
         } catch (Exception e) {}
     }
 
-    // login-credentials.username
+
     public String getJsonData(String jsonPath) {
         String testData = "";
 
